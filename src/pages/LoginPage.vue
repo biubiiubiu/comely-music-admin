@@ -1,33 +1,33 @@
 <template>
   <div class="login-page">
     <q-card class="login-form-content">
-      <div class="title">ZianMusic后台</div>
+      <div class="title">ComelyMusic后台</div>
       <q-form class="q-gutter-md" @submit="onSubmit(username, password)">
         <q-input
-          filled
-          label="用户名："
-          v-model="username"
-          lazy-rules
-          :rules="[val => (val && val.length > 0) || '请输入用户名']"
+            filled
+            label="用户名："
+            v-model="username"
+            lazy-rules
+            :rules="[val => (val && val.length > 0) || '请输入用户名']"
         />
 
         <q-input
-          filled
-          v-model="password"
-          type="password"
-          label="密码："
-          lazy-rules
-          :rules="[val => (val && val.length > 0) || '请输入密码']"
+            filled
+            v-model="password"
+            type="password"
+            label="密码："
+            lazy-rules
+            :rules="[val => (val && val.length > 0) || '请输入密码']"
         />
 
         <q-toggle v-model="accept" label="记住我" />
 
         <div>
           <q-btn
-            class="full-width"
-            label="登录"
-            type="submit"
-            color="primary"
+              class="full-width"
+              label="登录"
+              type="submit"
+              color="primary"
           />
         </div>
       </q-form>
